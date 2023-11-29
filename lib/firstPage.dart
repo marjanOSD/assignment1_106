@@ -36,7 +36,7 @@ class First extends StatelessWidget {
               ),
 
               onPressed: (){
-               // Navigator.push(context, MaterialPageRoute(builder: (context)=>Second()));
+               Navigator.push(context, MaterialPageRoute(builder: (context)=>Second()));
               }, child: Text("Buy Now",style: TextStyle(fontSize: 26,color: Colors.white),)))
       ],),
     );
