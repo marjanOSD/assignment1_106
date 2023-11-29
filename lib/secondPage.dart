@@ -36,6 +36,35 @@ class _SecondState extends State<Second> {
             ],
           ),
           // SizedBox.fromSize(size: Size(0,40),),
+          DropdownButton(
+            value: d_value,
+            borderRadius: BorderRadius.circular(21),
+            onChanged: (String? n_value) {
+              setState(() {
+                d_value = n_value!;
+              });
+            },
+            items: [
+              DropdownMenuItem<String>(
+                  value: "Choose your size",
+                  child: Text("Choose your size")),
+              DropdownMenuItem<String>(
+                  value: "36",
+                  child: Text("36")),
+              DropdownMenuItem<String>(
+                  value: "38",
+                  child: Text("38")),
+              DropdownMenuItem<String>(
+                  value: "40",
+                  child: Text("40")),
+            ],
+          ),
+          SizedBox.fromSize(size: Size(0,80),),
+          ElevatedButton(onPressed: (){
+            Navigator.pop(context);
+          }, child: Text("Go back",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 21),)),
+
+
         ],
       ),
     );
