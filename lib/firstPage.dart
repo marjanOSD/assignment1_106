@@ -29,6 +29,15 @@ class First extends StatelessWidget {
             padding:  EdgeInsets.symmetric(horizontal: 16),
             child: Text("– Matt Pink Color\n – Viscose\n – 3 piec",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 22,color: Colors.black54),),
           ),
+          SizedBox.fromSize(size: Size(0, 17),),
+          Center(child: ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.purple,
+              ),
+
+              onPressed: (){
+               // Navigator.push(context, MaterialPageRoute(builder: (context)=>Second()));
+              }, child: Text("Buy Now",style: TextStyle(fontSize: 26,color: Colors.white),)))
       ],),
     );
   }
